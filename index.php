@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="css/styles.css" />
 
-
 </head>
 <body>
 
@@ -22,12 +21,12 @@
             </div>
 
             <ul>
-                <li>Home</li>
-                <li>Serviços</li>
-                <li>Produtos</li>
-                <li>Portifólio</li>
-                <li>Sobre</li>
-                <li>Contato</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Portifólio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
 
         </nav>
@@ -37,7 +36,7 @@
             <h1 class="titulo">Entregando serviços de qualidade</h1>
             <h1 class="subtitulo">Soluções em TI</h1>
 
-            <p class="paragrafo">Crux Sacra Sit Mihi Lux Non Draco Sit Mihi Dux Vade Retro Satana Nunquam Suade Mihi Vana Sunt Mala Quae Libas Ipse Venena Bibas São Bento, rogai por nós!</p>
+            <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quibusdam ab in! A, nam voluptas!</p>
 
         </div>
 

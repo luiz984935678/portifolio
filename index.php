@@ -33,11 +33,12 @@
 
         <div class="titles">
 
-            <h1 class="titulo">Entregando serviços de qualidade</h1>
-            <h1 class="subtitulo">Soluções em TI</h1>
+            <div class="container-titles">
 
-            <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quibusdam ab in! A, nam voluptas!</p>
+                <h1 class="titulo">Entregando serviços de qualidade</h1>
+                <h1 class="subtitulo">Soluções em TI</h1>
 
+                <p class="paragrafo">Crux Sacra Sit Mihi Lux Non Draco Sit Mihi Dux Vade Retro Satana Venena Bibas!</p>
         </div>
 
         <div class="socialIcons">

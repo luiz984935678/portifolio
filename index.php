@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
 
+
+    <link rel="stylesheet" href="tools/fontawesome/css/all.css" />
+
     <link rel="stylesheet" href="css/styles.css" />
 
 </head>
@@ -38,14 +41,14 @@
                 <h1 class="titulo">Entregando serviços de qualidade</h1>
                 <h1 class="subtitulo">Soluções em TI</h1>
 
-                <p class="paragrafo">Crux Sacra Sit Mihi Lux Non Draco Sit Mihi Dux Vade Retro Satana Venena Bibas!</p>
+                <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem similique, non dignissimos quod id.</p>
         </div>
 
         <div class="socialIcons">
-            <a href="#">Twitter</a>
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
+            <a href="#" title="visite nosso Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="visite nosso Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="visite nosso Linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="#" title="visite nosso Instagram"><i class="fab fa-instagram"></i></a>
         </div>
 
     </header>

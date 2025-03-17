@@ -1,21 +1,24 @@
 :root {
     font-size: 12px;
     font-family: Verdana, sans-serif;
+    --azul-padrao: #3C6AA6;
+    --rosa-padrao: #9941BF;
+    --branco-padrao: #fafafa;
 }
 
 @font-face {
-    font-family: roboto;
-    src: url('../fontes/Roboto/static/Roboto-Regular.ttf');
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
 }
 
 @font-face {
-    font-family: oswald;
-    src: url('../fontes/Oswald/static/Oswald-Regular.ttf');
+    font-family: Oswald;
+    src: url('../fonts/Oswald/static/Oswald-Regular.ttf');
 }
 
 @font-face {
-    font-family: montserrat;
-    src: url('../fontes/Montserrat/static/Montserrat-Regular.ttf');
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
 }
 
 * {
@@ -32,7 +35,7 @@
     height: 100vh;
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: #fafafa;
+    background-color: var(--branco-padrao);
 }
 
 #interface header.cabecalho {
@@ -42,25 +45,27 @@
     height: 100%;
     background-image: url(../imagens/hero-bg.png);
     background-size: cover;
-    color: #fafafa;
-} 
+    color: var(--branco-padrao);
+}
 
 #interface .cabecalho .menu {
     display: flex;
     justify-content: space-between;
     width: 70%;
-    margin: 0 auto;  
+    margin: 0 auto;
     padding: 2rem 0;
 }
-#interface .cabecalho .logo {
+
+#interface .cabecalho .menu .logo {
     display: block;
     width: 150px;
 }
 
-#interface .cabecalho .logo img {
+#interface .cabecalho .menu .logo img {
     display: block;
     width: 100%;
 }
+
 #interface .cabecalho .menu ul {
     display: flex;
     align-items: center;
@@ -74,8 +79,8 @@
 
 #interface .cabecalho .menu ul li a {
     display: block;
-    font-family: oswald;
-    color: #fafafa;
+    font-family: Oswald;
+    color: var(--branco-padrao) ;
     font-size: 2rem;
     padding: .5rem 1rem;
     text-decoration: none;
@@ -86,11 +91,10 @@
     content: '';
     width: 0;
     height: 4px;
-    background-color: #9941bf;
+    background-color: var(--rosa-padrao);
     border-radius: 1px;
     margin-top: .5rem;
     transition: width .2s ease;
-
 }
 
 #interface .cabecalho .menu ul li:hover a::after {
@@ -98,7 +102,7 @@
 }
 
 #interface .cabecalho .titles {
-    flex-grow: 1; /*REFERE-SE AO FELX DO CABECALHO */
+    flex-grow: 1; /* REFERE-SE AO FLEX DO CABECALHO */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,7 +116,7 @@
 }
 
 #interface .cabecalho .titles .container-titles h1 {
-    font-family: montserrat;
+    font-family: Montserrat;
 }
 
 #interface .cabecalho .titles .container-titles h1.titulo {
@@ -120,8 +124,7 @@
 }
 
 #interface .cabecalho .titles .container-titles h1.subtitulo {
-    /*color: #3c6aa6; */
-    color: #9941bf;
+    color: var(--rosa-padrao);
     text-shadow: 0 0 20px rgba(255,255,255,.3);
     font-size: 2.2rem;
     margin-bottom: 1rem;
@@ -139,17 +142,20 @@
 }
 
 #interface .cabecalho .titles .socialIcons a {
-    color: #9941bf;
+    /* color: #3C6AA6; */
+    color: var(--rosa-padrao);
     padding: .5rem;
     font-size: 1.5rem;
 }
 
-/* ========================================================= */
+/* ======================================================= */
 
 #interface #corpo {
     display: block;
     width: 100%;
 }
+
+/* ======================================================= */
 
 #interface #corpo .servicos {
     display: flex;
@@ -157,13 +163,13 @@
     flex-wrap: wrap;
     width: 60%;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding-top: 10rem;
 }
 
 #interface #corpo .servicos article {
     display: block;
     width: 30%;
-    box-shadow: 0 0 6px rgba(0,0,0.2);
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
     border-radius: .5rem;
     margin-bottom: 3rem;
     padding: 2rem;
@@ -179,7 +185,7 @@
     display: block;
     text-align: center;
     font-family: Roboto;
-    color: #3c6aa6;
+    color: var(--azul-padrao);
     font-weight: normal;
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -190,4 +196,52 @@
     text-align: center;
     color: #666;
     line-height: 1.5;
+}
+
+/* ======================================================= */
+#interface #corpo .portifolio {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+
+#interface #corpo .portifolio .title-portifolio {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: Roboto;
+    color: var(--azul-padrao);
+    margin-bottom: 1rem;
+}
+
+#interface #corpo .portifolio .sub-title {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #A66B49;
+}
+
+#interface #corpo .portifolio .container-imagens {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+#interface #corpo .portifolio .container-imagens .img {
+    width: 30%;
+    height: 180px;
+    margin-top: 1.5rem;
+    border-radius: .75rem;
+    overflow: hidden;
+    box-shadow: 0 0 2px rgba(0,0,0,.4);
+    background-size: 100%;
+    background-position: center center;
+    transition: all .2s ease;
+}
+
+#interface #corpo .portifolio .container-imagens .img:hover {
+    background-size: 120%;
 }

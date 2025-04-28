@@ -1,24 +1,26 @@
 :root {
     font-size: 12px;
     font-family: Verdana, sans-serif;
-    --azul-padrao: #3C6AA6;
-    --rosa-padrao: #9941BF;
+
+    --azul-padrao: #3c6aa6;
+    --rosa-padrao: #9941bf;
     --branco-padrao: #fafafa;
+    --marrom-padrao: #a66b49;
 }
 
 @font-face {
     font-family: Roboto;
-    src: url('../fontes/Roboto/static/Roboto-Regular.ttf');
+    src: url('../../fonts/Roboto/Roboto-Regular.ttf');
 }
 
 @font-face {
     font-family: Oswald;
-    src: url('../fontes/Oswald/static/Oswald-Regular.ttf');
+    src: url('../../fonts/Oswald/Oswald-Regular.ttf');
 }
 
 @font-face {
     font-family: Montserrat;
-    src: url('../fontes/Montserrat/static/Montserrat-Regular.ttf');
+    src: url('../../fonts/Montserrat/Montserrat-Regular.ttf');
 }
 
 * {

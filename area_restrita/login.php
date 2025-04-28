@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Área Restrita - login</title>
-
+    <link rel="stylesheet" href="../tools/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/login.css" />
+    <title>Área Restrita - Login</title>
 </head>
 <body>
     <div id="interface">
-        <form action="" method='POST'>
-            <h3 class="title-login">Digite o usuário e a senha</h3>
 
-            <input type="email" name="txt_email" id='txt_email' class='' placeholder="Digite seu email"/>
-            <input type="password" name="txt_pw" id="txt-pw" class="" placeholder="Digite sua senha" />
+        <form action="" method="POST">
+            <span class="login-user"><i class="fa fa-user"></i></span>
 
-            <div class="container-buttons">
-            <a href="../">Cancelar</a>
-            <button type="submit" name="bt-submit" id="bt-submit" class="">Entrar</button>
-            </div>
+            <input type="email" name="txt_email" id="txt_email" class="" placeholder="Digite o seu e-mail" required />
+            <input type="password" name="txt_pw" id="txt_pw" class="" placeholder="Digite a sua senha" required />
 
+            <input type="submit" name="bt-submit" id="bt-submit" value="Entrar" />
         </form>
+
     </div>
 </body>
 </html>
